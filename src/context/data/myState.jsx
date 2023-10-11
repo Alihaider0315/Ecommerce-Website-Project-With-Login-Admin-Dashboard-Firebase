@@ -54,7 +54,7 @@ function myState(props) {
             getProductData();
             setLoading(false)
         } catch (error) {
-            console.log(error);
+            toast.error(error);
             setLoading(false)
         }
         // setProducts("")
@@ -86,7 +86,7 @@ function myState(props) {
             return () => data;
 
         } catch (error) {
-            console.log(error)
+            toast.error(error)
             setLoading(false)
         }
 
@@ -115,7 +115,7 @@ function myState(props) {
             setLoading(false)
 
         } catch (error) {
-            console.log(error)
+            toast.error(error)
             setLoading(false)
         }
     }
@@ -130,7 +130,7 @@ function myState(props) {
             getProductData();
             setLoading(false)
         } catch (error) {
-            console.log(error)
+            toast.error(error)
             setLoading(false)
         }
     }
@@ -148,10 +148,10 @@ function myState(props) {
                 setLoading(false)
             });
             setOrder(ordersArray);
-            console.log(ordersArray)
+            toast.error(ordersArray)
             setLoading(false);
         } catch (error) {
-            console.log(error)
+            toast.error(error)
             setLoading(false)
         }
     }
@@ -168,10 +168,10 @@ function myState(props) {
                 setLoading(false)
             });
             setUser(usersArray);
-            console.log(usersArray)
+            toast.error(usersArray)
             setLoading(false);
         } catch (error) {
-            console.log(error)
+            toast.error(error)
             setLoading(false)
         }
     }

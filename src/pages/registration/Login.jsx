@@ -34,7 +34,7 @@ function Login() {
             setLoading(false)
             
         } catch (error) {
-            console.log(error)
+            toast.error(error)
             setLoading(loading)
         }
 
